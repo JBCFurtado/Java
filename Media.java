@@ -22,11 +22,13 @@ public class Media
 		media = (nota1+nota2)/2;
 		if (media>=6)
 		{
-			JOptionPane.showMessageDialog(null,"Aluno" +nome+"\n"+"A média do aluno é"+media,"Aluno Aprovado",JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null,"Aluno" +nome+"\n"+"A media do aluno e: "
+			+media,"Aluno Aprovado",JOptionPane.INFORMATION_MESSAGE);
 		}
 		else 
 		{
-		JOptionPane.showMessageDialog(null,"Aluno" +nome+"\n"+"A media do aluno é"+media, "Deverá fazer Prova Substituta", JOptionPane.WARNING_MESSAGE);
+		JOptionPane.showMessageDialog(null,"Aluno" +nome+"\n"+"A media do aluno é: "
+		+media, "Deverá fazer Prova Substituta", JOptionPane.WARNING_MESSAGE);
 		}
 		nsub = JOptionPane.showInputDialog("Digite a nota da Sub");
 		//converte a String em double
@@ -44,11 +46,13 @@ public class Media
 		media = (sub + nota2)/2;
 		if (sub>=6)
 		{
-			JOptionPane.showMessageDialog(null,"Aluno" +nome+"\n"+"A média do aluno é"+nsub,"Aluno Aprovado",JOptionPane.INFORMATION_MESSAGE);
+			JOptionPane.showMessageDialog(null,"Aluno" +nome+"\n"+"A media do aluno e:"
+			+nsub,"Aluno Aprovado",JOptionPane.INFORMATION_MESSAGE);
 		}
 		else 
 		{
-		JOptionPane.showMessageDialog(null,"Aluno" +nome+"\n"+"A media do aluno é"+nsub, "Reprovado", JOptionPane.WARNING_MESSAGE);
+		JOptionPane.showMessageDialog(null,"Aluno" +nome+"\n"+"A media do aluno e:"
+		+nsub, "Reprovado", JOptionPane.WARNING_MESSAGE);
 		}
 		System.exit(0);
 	}
