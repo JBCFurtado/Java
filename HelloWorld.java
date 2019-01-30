@@ -7,7 +7,7 @@ package helloworld;
 
 /**
  *
- * @author Administrador
+ * @author Jobs
  */
 public class HelloWorld {
 
