@@ -1,25 +1,28 @@
+/**
+ *1_Utilizando a classe JOptionPane para entrada de dados, crie uma classe que receba o
+ *valor de um produto e um código de desconto. Obs.: O desconto deve ser calculado
+ *conforme a tabela abaixo:
+ */
+
 import javax.swing.JOptionPane;
 public class Senha {
-public static void main (String [] args) {
-String senha, admin;
-int s = 1;
-try{
-
-JOptionPane.showMessageDialog(null," Digite a sua senha !);
-senha = Float.parseFloat(JOptionPane.showInputDialog("digite sua senha : "));
-if( senha == admin){
-JOptionPane.showMessageDialog(null," Senha valida !);
-}else{
-JOptionPane.showMessageDialog(null," Senha invalida !);
+public static void main (String [] args) 
+{
+int cont = 0;
+while (cont < 3)
+{
+String senha = JOptionPane.showInputDialog("Insira a Senha");
+if (senha.equals("Admin"))
+{
+"Senha valida"
 }
-while(s <= 3){
-senha = Float.parseFloat(JOptionPane.showInputDialog("digite sua senha : "));
-s++;
+else 
+{
+"Senha invalida"
 }
-JOptionPane.showMessageDialog(null," Senha Bloqueada !);
-catch (NumberFormatException erro) {
-JOptionPane.showMessageDialog(null,"houve erro na conversao, digite apenas caracteres numericos"+erro.toString());
-}
-
+if (++ cont == 3)
+{
+"cartao cancelado!"
+}	
 }
 }
